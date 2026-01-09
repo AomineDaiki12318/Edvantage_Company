@@ -1,0 +1,66 @@
+.night_light{
+
+    border-radius: 50%;
+    background-color: rgb(240, 235, 235);
+    border: 1px solid white;
+    padding: 0.6rem 0.6rem;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.night_light:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+}
+
+.night_light:hover img:first-child{
+
+transform: rotate(190deg);
+}
+
+.night_light img:first-child{
+display: block;
+transition: all 0.5s ease-in-out;
+}
+
+.night_light img:last-child{
+display: none;
+}
+.dark_mode{
+background-color: black;
+color: white;
+}
+
+.light_mode{
+background-color: rgb(255, 255, 255);
+}
+
+.overlay_dark_mode::after{
+
+    border-radius:25px 0px 0px 0px ;
+     background-color: #000000;
+
+}
+
+.description_dark_mode{
+color:gray;
+font-weight: 500;
+margin: 2.5rem;
+height: 200px;
+overflow-x: hidden;
+color: white;
+
+}
+
+.card-content_dark_mode{
+  background-color: rgb(0, 0, 0);
+}
+
+
+body.night .first_img {
+  display: none;
+}
+
+body.night .second_img {
+  display: inline-block;
+}
